@@ -1,0 +1,9 @@
+.idea/
+**/log/
+**/logs/
+**/data/
+**/keys/
+**/tmp/
+**/.env
+**/.env.*
+**/secret
