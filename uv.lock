@@ -138,6 +138,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "flask" },
+    { name = "python-telegram" },
     { name = "python-telegram-bot" },
     { name = "requests" },
 ]
@@ -145,6 +146,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "flask", specifier = "==3.0.3" },
+    { name = "python-telegram", specifier = ">=0.19.0" },
     { name = "python-telegram-bot", specifier = ">=22.3" },
     { name = "requests", specifier = "==2.32.3" },
 ]
@@ -291,6 +293,18 @@ wheels = [
 ]
 
 [[package]]
+name = "python-telegram"
+version = "0.19.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "telegram-text" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/49/76/f102f251f55fa016093f14aa3373c354fef3a2a7cc035dea0d8783c69b4b/python_telegram-0.19.0.tar.gz", hash = "sha256:7b5b2da3d01d4cf5776c92f91fdd35a0f98976eec2356726b338f59ba01d1373", size = 20313048, upload-time = "2024-06-23T16:30:05.258Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/02/17/8995b7d036c9762f90964fc5897ab46458fcfc1ad1dd27fa063f726854b9/python_telegram-0.19.0-py3-none-any.whl", hash = "sha256:1e1d5e065a000580eeaeb5b608e410651320f5d6c804e8e4e7568b6b614071bc", size = 20436958, upload-time = "2024-06-23T16:30:00.344Z" },
+]
+
+[[package]]
 name = "python-telegram-bot"
 version = "22.3"
 source = { registry = "https://pypi.org/simple" }
@@ -324,6 +338,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/a2/87/a6771e1546d97e7e041b6ae58d80074f81b7d5121207425c964ddf5cfdbd/sniffio-1.3.1.tar.gz", hash = "sha256:f4324edc670a0f49750a81b895f35c3adb843cca46f0530f79fc1babb23789dc", size = 20372, upload-time = "2024-02-25T23:20:04.057Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e9/44/75a9c9421471a6c4805dbf2356f7c181a29c1879239abab1ea2cc8f38b40/sniffio-1.3.1-py3-none-any.whl", hash = "sha256:2f6da418d1f1e0fddd844478f41680e794e6051915791a034ff65e5f100525a2", size = 10235, upload-time = "2024-02-25T23:20:01.196Z" },
+]
+
+[[package]]
+name = "telegram-text"
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/6e/cf/b707b994ecb759a533e479e57e59ebcf6e806643fff5a53f05743ae817ac/telegram_text-0.2.0.tar.gz", hash = "sha256:ee295a35f2c77246dd9a80c5e1a8deccc598958dff35740697901c632c6121fa", size = 7943, upload-time = "2024-01-13T15:22:44.5Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2a/1e/88e9126640be7ddfa423d9ae7ac559577ab8877d45e1d32907c02602cdb3/telegram_text-0.2.0-py3-none-any.whl", hash = "sha256:5752744dc5f91f3f7f0ec1becbf10adb86d586d9338e0aef74fd76a7261283ca", size = 9059, upload-time = "2024-01-13T15:22:42.895Z" },
 ]
 
 [[package]]
