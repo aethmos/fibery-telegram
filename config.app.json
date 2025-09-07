@@ -1,8 +1,8 @@
 {
-  "id": "holidays-app",
-  "name": "Public Holidays",
-  "version": "1.0.1",
-  "description": "Integrate data about public holidays into Fibery",
+  "id": "telegram-app",
+  "name": "Telegram",
+  "version": "0.0.1",
+  "description": "Create entries in fibery by sending a message",
   "authentication": [
     {
       "id": "public",
