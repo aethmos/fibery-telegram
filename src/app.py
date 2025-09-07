@@ -22,8 +22,8 @@ def path():
 
 
 @app.route('/test', methods=['GET'])
-def test():
-    result = tg.get_messages()
+async def test():
+    result = await tg.get_messages()
     return jsonify(result)
 
 
