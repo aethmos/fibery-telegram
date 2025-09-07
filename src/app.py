@@ -13,11 +13,16 @@ app = Flask(__name__)
 logger = logging.getLogger('werkzeug')
 logger.setLevel(logging.INFO)
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path('.')
+
+
+@app.route('/path', methods=['GET'])
+def path():
+    return jsonify(BASE_DIR.absolute())
 
 
 @app.route('/test', methods=['GET'])
-def logo():
+def test():
     result = tg.get_messages()
     return jsonify(result)
 
