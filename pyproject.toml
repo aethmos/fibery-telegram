@@ -5,7 +5,7 @@ description = "An integration to sync telegram messages into fibery"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "flask==3.0.3",
+    "flask[async]==3.0.3",
     "requests==2.32.3",
     "telethon>=1.41.2",
 ]
